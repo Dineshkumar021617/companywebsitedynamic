@@ -25,9 +25,10 @@ Publish the website in the given URL.
 ## PROGRAM:
 
 ### basic.html:
+```
 {%load static%}
 <!DOCTYPE HTML>
-<html lang='en'>
+<html>
     <head>
         <title>DK Silicon Chip PVT Ltd</title>
         <link rel="stylesheet" href="{% static 'css/website.css' %}">
@@ -52,8 +53,10 @@ Publish the website in the given URL.
         </div>
     </body>
 </html>
+```
 
 ### home.html:
+```
 {% extends "dynamicwebsite/basic.html" %}
 
 {% block content %}
@@ -74,8 +77,10 @@ Publish the website in the given URL.
     </div>
     </div>
 {% endblock  %}
+```
 
 ### products.html:
+```
 {% extends "dynamicwebsite/basic.html" %}
 
 {% block content %}
@@ -93,8 +98,10 @@ Publish the website in the given URL.
         {% endfor %}
     </div>
 {% endblock %}
+```
 
 ### people.html:
+```
 {% extends "dynamicwebsite/basic.html" %}
 
 {% block content %}
@@ -112,8 +119,10 @@ Publish the website in the given URL.
         {% endfor %}
     </div>
 {% endblock %}
+```
 
 ### contactus.html:
+```
 {% extends "dynamicwebsite/basic.html" %}
 
 {% block content %}
@@ -140,7 +149,7 @@ Publish the website in the given URL.
         </div>
     </div>
 {% endblock %}
-
+```
 
 ## OUTPUT:
 ![output](./static/picture/homepage.png)
