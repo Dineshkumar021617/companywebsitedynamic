@@ -7,10 +7,11 @@
         {% for i in products%}
         <div class="productitem"> 
             <div class="itemimage">
-            <img src="{{products.product_img.url}}" alt="product image">
+            <img src="{{i.product_img.url}}" alt="product image">
             </div>
-            <div class="itemname">{products.product_name}</div>
-            <div class="itemprice">Price:{products.product_price}</div>
+            <div class="itemname">{{i.product_name}}</div>
+            <div class="itemprice">Price:{{i.product_price}}</div>
         </div>
+        {% endfor %}
     </div>
 {% endblock %}
