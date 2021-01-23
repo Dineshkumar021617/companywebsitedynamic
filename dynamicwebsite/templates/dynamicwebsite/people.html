@@ -1,0 +1,16 @@
+{% extends "website/base.html" %}
+
+{% block content %}
+    <div class="peoplecontent">
+        {% for p in people %}
+        <div>
+            <div class="peopleimg">
+                <img src= "{{ people.people_img.url }}"  alt="people image">
+            </div>
+            <div class="peopledetails">
+                <h3>{{people.people_name}}</h3>
+                <h3>{{people.people_desig}}</h3>
+            </div>
+        </div>
+    </div>
+{% endblock %}

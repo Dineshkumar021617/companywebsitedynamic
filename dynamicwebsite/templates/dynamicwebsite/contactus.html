@@ -1,0 +1,26 @@
+{% extends "dynamicwebsite/basic.html" %}
+
+{% block content %}
+    <div>
+        <h2>CONTACT US</h2>
+        <h3 id="h3">We're are glad to help you!</h3>
+        <div>
+            <form class="complaints" action="/test" method="POST">
+                <textarea placeholder="Your name" rows="1" cols="50" name="name" id="name"></textarea><br>  
+                <textarea placeholder="E-mail" rows="1" cols="50" name="email" id="email"></textarea><br>
+                <textarea name="message" id="message" rows="8" cols="50" placeholder="Message"></textarea><br>
+                <button type="submit" name="submit" id="submit">Sumbit</button>
+            </form>
+            <div class="contactus">
+                <div>
+                    <img class="address" src="https://us.123rf.com/450wm/lililia/lililia1711/lililia171100435/90687353-vector-flat-icon-of-geolocation-on-black-background.jpg?ver=6" alt="contactus">
+                    <a>#140,BK nagar,Adyar,Chennai-600020</a>
+                </div>
+                <div>
+                    <img class="address" src="https://i.pinimg.com/474x/47/ee/93/47ee9334101d8d875da877bec5f46f47.jpg" alt="contactus">
+                    <a>044-2474 8291</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

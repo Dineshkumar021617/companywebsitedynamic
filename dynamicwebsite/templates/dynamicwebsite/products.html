@@ -1,0 +1,16 @@
+{% extends "dynamicwebsite/basic.html" %}
+
+{% block content %}
+    <div class="productcontent">    
+    <h1>Our Premium Products</h1>
+    <div class="productitems">
+        {% for i in products%}
+        <div class="productitem"> 
+            <div class="itemimage">
+            <img src="{{products.product_img.url}}" alt="product image">
+            </div>
+            <div class="itemname">{products.product_name}</div>
+            <div class="itemprice">Price:{products.product_price}</div>
+        </div>
+    </div>
+{% endblock %}
